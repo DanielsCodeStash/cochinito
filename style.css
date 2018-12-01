@@ -1,0 +1,22 @@
+body {
+    background-color: white;
+}
+
+
+.ldBar {
+    xxmargin: 0;
+    xxpadding: 0;
+}
+
+.ldBar-label {
+    xxddvisibility: hidden;
+}
+
+.ldBar-label:after { 
+    content: "kr \A of 2000"; 
+    color: #aaa; 
+    margin-left: 5px; 
+    font-family: 'Courier New',Courier;
+    font-size: 0.7em; 
+    font-weight: 200; 
+}
