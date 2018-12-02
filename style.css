@@ -1,22 +1,33 @@
 body {
     background-color: white;
+    font-family: 'Courier New',Courier;
+    border: 0;
+    padding: 0;
+    margin: 0;
 }
 
 
-.ldBar {
-    xxmargin: 0;
-    xxpadding: 0;
+
+
+#homeBar {
+    background-color: rgb(231, 231, 231);
 }
 
-.ldBar-label {
-    xxddvisibility: hidden;
+#bottomPanel {
+    background-color: #fdedfd;
+    position: fixed;
+    bottom: 0;
+    
 }
 
-.ldBar-label:after { 
-    content: "kr \A of 2000"; 
+#bottomPanel .ldBar {
+
+}
+
+#homeBar .ldBar-label:after { 
+    content: "kr"; 
     color: #aaa; 
     margin-left: 5px; 
-    font-family: 'Courier New',Courier;
     font-size: 0.7em; 
     font-weight: 200; 
 }

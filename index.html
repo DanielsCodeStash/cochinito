@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Cochinito 0.1</title>
+        <title>Cochinito 0.2</title>
         <meta charset="UTF-8"> 
 
         <link rel="stylesheet" type="text/css" href="loading/loading-bar.css"/> 
@@ -12,34 +12,29 @@
     </head>
     <body>
 
-        <div style="display: inline-block; border: 1px solid #474747; background-color: #cdfdff; border-radius: 5px;">
-                <div style="background-color: #cdcdcd  ; border-bottom: 1px solid #474747; border-radius: 5px 5px 0 0 ;">
-                    <img src="theatre.png" width="40px">
-                    <div style="float: right; padding: 15px 5px 0 0; font-family:Courier, monospace">
-                        <b>15400</b>
-                    </div>
-                </div>
-
-        <div 
-            data-type="fill" 
-            data-path="M10 10L120 10L120 120L10 120Z" 
-            class="ldBar" 
-            data-value="70"
-            pattern size="20000"
-            style="margin:0px;padding:0px;border:0;"
-            data-fill-background="#cdfdff"
-            data-fill="data:ldbar/res,bubble(#4e918e, #f4b841, 100, 10)" 
-            ></div>
-
+        <div id="topPanel">
+            Oct start: 1.2kr
+            <br />
+            Last month spent: 10.2kr 
         </div>
-        
 
-        <div class="ldBar label-center" 
-        style="width:100px;height:100px;" 
-        data-value="35" 
-        data-preset="circle" 
+        <div id="homeBar">
+            <div 
+                class="ldBar label-center" 
+                style="width:100px;height:100px;" 
+                data-value="35" 
+                data-preset="circle" 
+            ></div>
+            <div>home</div>
+        </div>
 
-        ></div>
-
+        <div id="bottomPanel">
+        <div 
+            class="ldBar" 
+            data-value="30" 
+            style="width:100%; height: auto;", 
+            data-stroke="data:ldbar/res,gradient(0,10,#9df,#9fd,#df9,#fd9)", 
+            data-path="M10 20Q20 15 30 20Q40 25 50 20Q60 15 70 20Q80 25 90 20" ></div>
+        </div>
     </body>
 </html>
