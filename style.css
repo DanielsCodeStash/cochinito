@@ -6,26 +6,57 @@ body {
     margin: 0;
 }
 
+#topPanel {
+    height: 200px; 
+}
+
+#mainPanel {
+    margin-top: 20px;
+}
+
+.infoPanel {
+    text-align: center;
+}
 
 
+.accountPanel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.accountPanel.left {
+    width: 50%;
+    float: left;
+}
 
-#homeBar {
-    background-color: rgb(231, 231, 231);
+.accountPanel.right {
+    width: 50%;
+    float: right;
 }
 
 #bottomPanel {
-    background-color: #fdedfd;
     position: fixed;
+    width: 100%;
     bottom: 0;
-    
 }
 
-#bottomPanel .ldBar {
-
-}
-
-#homeBar .ldBar-label:after { 
+#mainPanel .ldBar-label:after { 
     content: "kr"; 
+    color: #aaa; 
+    margin-left: 5px; 
+    font-size: 0.7em; 
+    font-weight: 200; 
+}
+
+#bottomPanel .ldBar-label { 
+    text-align: center;
+}
+
+#bottomPanel .ldBar-label:after { 
+    content: "kr total savings"; 
     color: #aaa; 
     margin-left: 5px; 
     font-size: 0.7em; 

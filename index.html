@@ -6,8 +6,15 @@
 
         <link rel="stylesheet" type="text/css" href="loading/loading-bar.css"/> 
         <script type="text/javascript" src="loading/loading-bar.js"></script>
+        
         <link rel="stylesheet" type="text/css" href="style.css"/>
 
+
+        <script src="https://code.highcharts.com/highcharts.js"></script>
+        <script src="https://code.highcharts.com/modules/exporting.js"></script>
+        <script src="https://code.highcharts.com/modules/export-data.js"></script>
+
+        <script type="text/javascript" src="charthings.js"></script>
         
     </head>
     <body>
@@ -18,15 +25,48 @@
             Last month spent: 10.2kr 
         </div>
 
-        <div id="homeBar">
-            <div 
-                class="ldBar label-center" 
-                style="width:100px;height:100px;" 
-                data-value="35" 
-                data-preset="circle" 
-            ></div>
-            <div>home</div>
+        <div id="mainPanel">
+            <div class="accountPanel left">
+                <div 
+                    class="ldBar label-center" 
+                    style="width:100px;height:100px;" 
+                    data-value="35" 
+                    data-preset="circle" 
+                ></div>
+                <div class="infoPanel">Home</div>
+            </div>
+
+            <div class="accountPanel right">
+                <div 
+                    class="ldBar label-center" 
+                    style="width:100px;height:100px;" 
+                    data-value="24" 
+                    data-preset="circle" 
+                ></div>
+                <div class="infoPanel">Ingrid</div>
+            </div>
+
+            <div class="accountPanel left">
+                <div 
+                    class="ldBar label-center" 
+                    style="width:100px;height:100px;" 
+                    data-value="23" 
+                    data-preset="circle" 
+                ></div>
+                <div class="infoPanel">Travel</div>
+            </div>
+
+            <div class="accountPanel right">
+                <div 
+                    class="ldBar label-center" 
+                    style="width:100px;height:100px;" 
+                    data-value="10" 
+                    data-preset="circle" 
+                ></div>
+                <div class="infoPanel">Daniel</div>
+            </div>
         </div>
+        
 
         <div id="bottomPanel">
         <div 
